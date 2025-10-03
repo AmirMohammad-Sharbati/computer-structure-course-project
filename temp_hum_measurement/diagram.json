@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno1", "top": 223.5, "left": 11, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 60,
+      "left": 342.2,
+      "attrs": { "temperature": "67.5" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 459.7,
+      "left": 276.4,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 113.7,
+      "left": 140.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 179.7,
+      "left": 155.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": 140.9, "left": 216.3, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno1:GND.2", "lcd1:GND", "black", [ "v0" ] ],
+    [ "uno1:5V", "lcd1:VCC", "red", [ "v0" ] ],
+    [ "uno1:A4", "lcd1:SDA", "green", [ "v0" ] ],
+    [ "uno1:A5", "lcd1:SCL", "green", [ "v0" ] ],
+    [ "uno1:GND.3", "dht1:GND", "black", [ "v38.3", "h196" ] ],
+    [ "uno1:5V", "dht1:VCC", "red", [ "v19.1", "h176.6" ] ],
+    [ "uno1:2", "dht1:SDA", "cyan", [ "v-28.8", "h119.3" ] ],
+    [ "r1:1", "led1:A", "green", [ "v0", "h-38.4" ] ],
+    [ "r1:2", "uno1:8", "green", [ "v0", "h8.4" ] ],
+    [ "led1:C", "uno1:GND.1", "green", [ "v0", "h-38" ] ],
+    [ "sw1:1", "uno1:GND.1", "green", [ "v38.4", "h-76.8" ] ],
+    [ "sw1:2", "uno1:3", "green", [ "v19.2", "h9.7" ] ]
+  ],
+  "dependencies": {}
+}
