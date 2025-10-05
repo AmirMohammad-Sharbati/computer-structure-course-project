@@ -5,7 +5,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++%20%7C%20Python-blue)
 ![License](https://img.shields.io/badge/license-MIT-purple)
-![Repo Size](https://img.shields.io/github/repo-size/Amirmohammad-sharbati/computer-structure-course-mips?color=green)
+![Repo Size](https://img.shields.io/github/repo-size/Amirmohammad-sharbati/computer-structure-course-project?color=green)
 
 
 ## 📌 Project Overview  
@@ -39,11 +39,13 @@ Although the course topics were not directly about embedded systems, this projec
 ## 🚀 How to Run
 #### Option 1 - Run on Wokwi
 1. Open [Wokwi](https://wokwi.com/)
-1. Copy `src/main.cpp` and `diagram.json`.
+1. Create a new Arduino project. 
+1. Copy the contents of `src/main.cpp` into the Wokwi editor.  
+1. Upload `diagram.json` to define the circuit connections.  
 1. Start the simulation.
 
 #### Option 2 - Run Locally with PlatformIO
-1. Install VSCode and the PlatformIO extension.  
+1. Install [VSCode](https://code.visualstudio.com/) and the **PlatformIO** extension.  
 2. Clone this repository:  
 ```bash
 git clone https://github.com/AmirMohammad-Sharbati/computer-structure-course-project.git
@@ -52,9 +54,10 @@ cd arduino-time-humidity
 3. Open the project in VSCode.
 4. Build and upload to the simulator
 
-**It is better to use option 2 for this project because of python script. If in a project you have only C++ code, Online Wokwi is simpler choice for simulation**
+#### 💡 Tip:
+- **Option 2 (PlatformIO) is recommended** for this project because it allows integration with the Python plotting script. If your project only includes C++ code, the online Wokwi simulator is a simpler and faster option.
 
 
 ## 🔗 Related
-- Exercises of course which are about MIPS assembly programming is available in a separate repository: https://github.com/AmirMohammad-Sharbati/computer-structure-course-mips.git
+- Exercises from this course which are about MIPS assembly programming are available in a separate repository: https://github.com/AmirMohammad-Sharbati/computer-structure-course-mips.git
 
